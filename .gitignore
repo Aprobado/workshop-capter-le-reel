@@ -16,6 +16,9 @@
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
 
+# Let us ignore heavy PLY files
+[Ii]gnoredPlyFiles/
+
 # osx icons
 Icon?
 

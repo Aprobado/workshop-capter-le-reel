@@ -32,7 +32,6 @@ public class CameraMoveControl : MonoBehaviour
     void Update()
     {
         var value = InputBindings.ReadValue<float>() * Speed * Time.deltaTime;
-        // var move = transform.InverseTransformDirection(axis * value);
         var destination = transform.position + axis * value;
         if (useLimits && MinValue < MaxValue)
         {
@@ -52,7 +51,6 @@ public class CameraMoveControl : MonoBehaviour
             }
         }
         transform.position = destination;
-        // transform.Translate(axis * value, Space.Self);
     }
 
     private Vector3 axis

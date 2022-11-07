@@ -1,0 +1,293 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7648050662670849375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5147109482671323112}
+  - component: {fileID: 769332912124218111}
+  - component: {fileID: 5035222422915540972}
+  - component: {fileID: 684006215133363641}
+  - component: {fileID: 1562444907765708547}
+  - component: {fileID: 8456023590561131648}
+  m_Layer: 0
+  m_Name: EquirectCameraFreelookController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5147109482671323112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7648050662670849375}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2621494054531264624}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &769332912124218111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7648050662670849375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41bb6b4dfe0a8d43a1bac979ad53d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 90
+  InputBindings:
+    m_Name: Input Bindings
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: d87a6045-1ad0-4842-ac39-142c0f5db44f
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 1e3a16fc-f497-4a40-8d88-a85d7cbe255d
+      m_Path: <Gamepad>/rightStick/x
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input Bindings
+      m_Flags: 0
+    m_Flags: 0
+--- !u!114 &5035222422915540972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7648050662670849375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6487b500e963dc64b9caa7daae1449be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Direction: 2
+  Speed: 4
+  useLimits: 1
+  MinValue: 0.15
+  MaxValue: 100
+  InputBindings:
+    m_Name: Input Bindings
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 048c106b-b21c-4aa3-87f7-415d91e759cb
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 96f93f41-9c2e-4f18-8959-8f86a3ee6bdd
+      m_Path: <Gamepad>/rightStick/y
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input Bindings
+      m_Flags: 0
+    m_Flags: 0
+--- !u!114 &684006215133363641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7648050662670849375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6487b500e963dc64b9caa7daae1449be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Direction: 0
+  Speed: 4
+  useLimits: 0
+  MinValue: 0
+  MaxValue: 0
+  InputBindings:
+    m_Name: Input Bindings
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: bdf79a35-896d-4a0f-b66d-2f5730c1c6a9
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 7aeef29f-383c-4026-9cc4-fd8ba681e174
+      m_Path: <Gamepad>/leftStick/y
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input Bindings
+      m_Flags: 0
+    m_Flags: 0
+--- !u!114 &1562444907765708547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7648050662670849375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6487b500e963dc64b9caa7daae1449be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Direction: 1
+  Speed: 4
+  useLimits: 0
+  MinValue: 0
+  MaxValue: 0
+  InputBindings:
+    m_Name: Input Bindings
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 2b631d18-3f23-44d4-9765-cbdf4518fdde
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 4b3cbb86-494a-4228-a9e3-412611004ed5
+      m_Path: <Gamepad>/leftStick/x
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input Bindings
+      m_Flags: 0
+    m_Flags: 0
+--- !u!114 &8456023590561131648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7648050662670849375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc180c62d47e1494e9607f3d71397c58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InputBindings:
+    m_Name: Input Bindings
+    m_Type: 1
+    m_ExpectedControlType: Button
+    m_Id: 4e72bd60-ec45-4e58-b441-afd31a5c7d64
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: Gamepad
+      m_Id: f2128ba4-081e-4315-ac7e-369b1e5693d7
+      m_Path: OneModifier
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input Bindings
+      m_Flags: 4
+    - m_Name: modifier
+      m_Id: 55001b4a-3391-4fd6-b0a6-cdb7fe5f4e8a
+      m_Path: <Gamepad>/leftStickPress
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input Bindings
+      m_Flags: 8
+    - m_Name: binding
+      m_Id: 1c77ea17-9e3e-4aa1-84ce-e9555845394e
+      m_Path: <Gamepad>/rightStickPress
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input Bindings
+      m_Flags: 8
+    m_Flags: 0
+--- !u!1001 &5412777630476021535
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 5147109482671323112}
+    m_Modifications:
+    - target: {fileID: 2274419471082727439, guid: 71306afb537f14c02b562e8f263c91d5,
+        type: 3}
+      propertyPath: m_Name
+      value: Equirect Camera Rig
+      objectReference: {fileID: 0}
+    - target: {fileID: 8034252855598014319, guid: 71306afb537f14c02b562e8f263c91d5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8034252855598014319, guid: 71306afb537f14c02b562e8f263c91d5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8034252855598014319, guid: 71306afb537f14c02b562e8f263c91d5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8034252855598014319, guid: 71306afb537f14c02b562e8f263c91d5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8034252855598014319, guid: 71306afb537f14c02b562e8f263c91d5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8034252855598014319, guid: 71306afb537f14c02b562e8f263c91d5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8034252855598014319, guid: 71306afb537f14c02b562e8f263c91d5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8034252855598014319, guid: 71306afb537f14c02b562e8f263c91d5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8034252855598014319, guid: 71306afb537f14c02b562e8f263c91d5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8034252855598014319, guid: 71306afb537f14c02b562e8f263c91d5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8034252855598014319, guid: 71306afb537f14c02b562e8f263c91d5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 71306afb537f14c02b562e8f263c91d5, type: 3}
+--- !u!4 &2621494054531264624 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8034252855598014319, guid: 71306afb537f14c02b562e8f263c91d5,
+    type: 3}
+  m_PrefabInstance: {fileID: 5412777630476021535}
+  m_PrefabAsset: {fileID: 0}
